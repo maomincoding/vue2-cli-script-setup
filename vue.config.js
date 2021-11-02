@@ -6,6 +6,7 @@ const UnpluginVue2ScriptSetupPlugin = require('unplugin-vue2-script-setup/webpac
  * @type {import('@vue/cli-service').ProjectOptions}
  */
 module.exports = {
+  parallel:false,
   chainWebpack(config) {
     // unplugin-vue2-script-setup
     config.plugin('unplugin-vue2-script-setup').use(
